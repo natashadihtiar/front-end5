@@ -30,3 +30,46 @@ console.log(getSum());
   </script>
 </body>
 </html> 
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+      <script>
+
+var num1 = 5;
+var num2 = 7;
+
+function f (a = 2, b = 3, c) {
+function getSum (a = 2, b = 3) {
+  return a + b;
+}
+  if (typeof(c) === "function") {
+  	return c();
+  }
+  return getSum();
+
+  }
+
+
+function getAvarage (a=3, b=3) {
+
+  return (a + b) / 2;}
+
+
+
+console.log(f(num1, num2, 5));
+console.log(f(num1, num2, getAvarage));
+
+  </script>
+</body>
+</html> 
